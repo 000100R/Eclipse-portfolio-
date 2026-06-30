@@ -57,7 +57,7 @@ export default function Contact() {
   // Browser-based direct PDF resume download (extremely professional and fully operational!)
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = 'assets/resume.pdf';
+    link.href = personalInfo.resumeUrl;
     link.download = 'Rishav_Ghosh_Resume.pdf';
     document.body.appendChild(link);
     link.click();

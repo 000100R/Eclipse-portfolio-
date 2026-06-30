@@ -1,6 +1,7 @@
 import React, { useMemo, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowDown, ArrowUpRight, BookOpen, Terminal, Sparkles } from 'lucide-react';
+import heroImage from '@/assets/hero.jpg';
 
 interface HeroProps {
   onOpenCommandPalette: () => void;
@@ -68,7 +69,7 @@ export default function Hero({ onOpenCommandPalette, onOpenAssistant }: HeroProp
       {/* Cinematic Background Image Texture Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-[0.045] saturate-50 mix-blend-luminosity pointer-events-none z-0"
-        style={{ backgroundImage: 'url(assets/hero.jpg)' }}
+        style={{ backgroundImage: `url(${heroImage})` }}
       />
 
       {/* Subtle Floating Particles using CSS Only */}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'motion/react';
 import { Quote, Terminal, Sparkles, Cpu, Award, Zap, Code, ShieldCheck } from 'lucide-react';
+import aboutImage from '@/assets/about.jpg';
 
 interface StatCardProps {
   value: string;
@@ -175,7 +176,7 @@ export default function About() {
                 <div className="w-full h-full rounded-2xl overflow-hidden relative">
                   <motion.img
                     style={{ y: yParallax, scale: 1.15 }}
-                    src="assets/about.jpg"
+                    src={aboutImage}
                     alt="Rishav Ghosh Portrait"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center saturate-50 brightness-75 group-hover:saturate-100 group-hover:brightness-95 transition-all duration-500"

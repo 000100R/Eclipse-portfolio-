@@ -1,4 +1,7 @@
 import { Project, Experience, SkillCategory, GalleryImage } from './types';
+import heroImage from '@/assets/hero.jpg';
+import aboutImage from '@/assets/about.jpg';
+import resumePdf from '@/assets/resume.pdf';
 
 export const portfolioData = {
   personalInfo: {
@@ -14,7 +17,7 @@ export const portfolioData = {
     },
     mission: "To construct digital spaces that blend stunning visual narratives with high-performance interactions. I combine creative content creation and Canva design with foundational knowledge of artificial intelligence to build memorable user experiences that tell a story.",
     vision: "The future of visual media is highly dynamic, automated, and deeply interactive. By integrating design tools, video pipelines, and prompt engineering with modern front-end technologies, we can shape immersive spaces that captivate and inspire.",
-    resumeUrl: "assets/resume.pdf", // Direct download trigger
+    resumeUrl: resumePdf, // Direct download trigger
   },
 
   statistics: [
@@ -168,14 +171,14 @@ export const portfolioData = {
       id: "gal1",
       title: "Personal Portfolio Workspace",
       category: "Creative Space",
-      image: "assets/hero.jpg",
+      image: heroImage,
       description: "My workspace focused on visual creation, scripting, and studying AI architectures."
     },
     {
       id: "gal2",
       title: "Creative Visual Branding",
       category: "Graphic Design",
-      image: "assets/about.jpg",
+      image: aboutImage,
       description: "Visual thumbnail layouts and brand vectors produced using modern layout software."
     },
     {
