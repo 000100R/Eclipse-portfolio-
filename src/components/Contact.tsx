@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { portfolioData } from '../data';
-import { Mail, Send, Check, Download, Github, Linkedin, Twitter, Dribbble, ArrowUpRight } from 'lucide-react';
+import { Mail, Send, Check, Download, Github, Linkedin, Twitter, Dribbble, Youtube, ArrowUpRight } from 'lucide-react';
 
 export default function Contact() {
   const { personalInfo } = portfolioData;
@@ -54,59 +54,14 @@ export default function Contact() {
     }, 1500);
   };
 
-  // Browser-based direct text resume download (extremely professional and fully operational!)
+  // Browser-based direct PDF resume download (extremely professional and fully operational!)
   const handleDownloadResume = () => {
-    const resumeText = `
-==================================================
-RISHAV GHOSH - PORTFOLIO RESUME
-==================================================
-Senior Staff Software Engineer & Creative Technologist
-ghoshrishav184@gmail.com | San Francisco, CA
-
-PROFESSIONAL SUMMARY:
-Over 8 years of elite engineering leadership spanning Vercel, Stripe, and Apple. 
-Pioneered complex UI layouts, fast rendering engines, custom interactive SVG 
-matrices, and standard-setting open-source packages. Guaranteed pass on Core 
-Web Vitals and strict accessibility constraints.
-
-TECHNICAL CAPABILITIES:
-- Languages: TypeScript, JavaScript (ESNext), HTML5/CSS Math, GLSL
-- Rendering: WebGL, HTML5 Canvas 2D/3D, SVG layout architectures
-- Frameworks: React 19, Next.js, Node.js, Express, Framer Motion, Tailwind CSS
-- Tooling: WebPack, Vite, Esbuild, Docker, Git, CI/CD, Lighthouse, Performance Auditing
-
-CHRONOLOGICAL EXPERIENCE:
-1. Vercel - Lead Creative Developer (2024 - Present)
-   - Improved dashboard interaction times by 42%.
-   - Created the Next.js DX Motion animation library.
-   - Built 3D conference timelines animating 1.2M nodes.
-
-2. Stripe - Senior Full-Stack UI Architect (2022 - 2024)
-   - Raised conversion on next-gen checkouts by 12.4%.
-   - Built SVG transaction flow models with physics gravity structures.
-
-3. Apple - Frontend Design Engineer (2020 - 2022)
-   - Engineered launch visualizers for Vision Pro & iPhone 13.
-   - Designed hardware-accelerated Safari motion standards.
-
-EDUCATION & AWARDS:
-- BS in Computer Science, UI/UX specialization
-- Awwwards Creative Design of the Year Winner
-
-==================================================
-Generated automatically from Rishav Ghosh Digital Space.
-==================================================
-    `;
-
-    const blob = new Blob([resumeText], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Rishav_Ghosh_Executive_Resume.txt';
+    link.href = 'assets/resume.pdf';
+    link.download = 'Rishav_Ghosh_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revokeObjectURL(url);
   };
 
   return (
@@ -180,9 +135,9 @@ Generated automatically from Rishav Ghosh Digital Space.
             {/* Social Grid coordinates */}
             <div className="flex flex-col gap-3">
               <span className="text-[10px] font-mono tracking-widest text-zinc-500 uppercase">
-                CRYPTO CO-ORDINATES
+                SOCIAL MEDIA CHANNELS
               </span>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="flex flex-col gap-3">
                 <a
                   href={personalInfo.socials.github}
                   target="_blank"
@@ -212,29 +167,15 @@ Generated automatically from Rishav Ghosh Digital Space.
                 </a>
 
                 <a
-                  href={personalInfo.socials.twitter}
+                  href={personalInfo.socials.youtube}
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center justify-between p-4 bg-zinc-950/60 border border-white/5 rounded-xl hover:border-white/10 hover:bg-zinc-900/60 transition-all cursor-none group"
-                  data-cursor="TWITTER"
+                  data-cursor="YOUTUBE"
                 >
                   <div className="flex items-center gap-2.5">
-                    <Twitter className="w-4 h-4 text-zinc-400 group-hover:text-white transition-colors" />
-                    <span className="text-xs font-sans font-medium text-zinc-300 group-hover:text-white">Twitter</span>
-                  </div>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-zinc-600 group-hover:text-white transition-all transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </a>
-
-                <a
-                  href={personalInfo.socials.dribbble}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center justify-between p-4 bg-zinc-950/60 border border-white/5 rounded-xl hover:border-white/10 hover:bg-zinc-900/60 transition-all cursor-none group"
-                  data-cursor="DESIGN"
-                >
-                  <div className="flex items-center gap-2.5">
-                    <Dribbble className="w-4 h-4 text-zinc-400 group-hover:text-white transition-colors" />
-                    <span className="text-xs font-sans font-medium text-zinc-300 group-hover:text-white">Dribbble</span>
+                    <Youtube className="w-4 h-4 text-zinc-400 group-hover:text-red-500 transition-colors" />
+                    <span className="text-xs font-sans font-medium text-zinc-300 group-hover:text-white">YouTube</span>
                   </div>
                   <ArrowUpRight className="w-3.5 h-3.5 text-zinc-600 group-hover:text-white transition-all transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>

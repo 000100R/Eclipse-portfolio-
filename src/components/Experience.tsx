@@ -24,7 +24,7 @@ export default function Experience() {
             </h2>
           </div>
           <p className="text-xs font-mono text-zinc-500 max-w-sm md:text-right">
-            A chronological timeline of building next-gen standards for web speed and UI engineering.
+            A chronological timeline of building organic audiences, premium brands, and exploring AI.
           </p>
         </div>
 

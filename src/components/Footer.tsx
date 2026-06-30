@@ -23,12 +23,19 @@ export default function Footer() {
           </span>
         </div>
 
-        {/* Center: System coordinates */}
-        <div className="flex items-center gap-2 text-[9px] font-mono text-zinc-500 bg-zinc-950 px-3 py-1.5 rounded-lg border border-white/5">
-          <Terminal className="w-3.5 h-3.5 text-zinc-500" />
-          <span>LOC: [37.7749° N, 122.4194° W]</span>
-          <span className="text-zinc-800">•</span>
-          <span>LATENCY: 4.2ms</span>
+        {/* Center: System coordinates & Socials */}
+        <div className="flex flex-col md:flex-row items-center gap-4 text-[9px] font-mono text-zinc-500">
+          <div className="flex items-center gap-2 bg-zinc-950 px-3 py-1.5 rounded-lg border border-white/5">
+            <Terminal className="w-3.5 h-3.5 text-zinc-500" />
+            <span>LOC: [22.5726° N, 88.3639° E]</span>
+            <span className="text-zinc-800">•</span>
+            <span>LATENCY: 4.2ms</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <a href="https://github.com/000100R" target="_blank" rel="noreferrer" className="hover:text-white transition-colors text-[10px] uppercase tracking-widest">GitHub</a>
+            <span className="text-zinc-800">•</span>
+            <a href="https://youtube.com/@rawentity-202" target="_blank" rel="noreferrer" className="hover:text-red-500 transition-colors text-[10px] uppercase tracking-widest">YouTube</a>
+          </div>
         </div>
 
         {/* Right: Scroll to Top */}
