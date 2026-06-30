@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react';
-import CanvasBackground from './components/CanvasBackground';
+import SpaceBackground from './components/Background/SpaceBackground';
+import { useScrollProgress } from './hooks/useScrollProgress';
 import CustomCursor from './components/CustomCursor';
 import PageLoader from './components/PageLoader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
-import Projects from './components/Projects';
+import Projects from './sections/Projects';
 import Skills from './components/Skills';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import FloatingAssistant from './components/FloatingAssistant';
+import AskRishav from './components/AI/AskRishav';
 import CommandPalette from './components/CommandPalette';
 import { startAmbientSound, stopAmbientSound } from './utils/synthesizer';
 
@@ -20,6 +21,7 @@ export default function App() {
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [isAssistantOpen, setIsAssistantOpen] = useState(false);
+  const scrollProgress = useScrollProgress();
 
   // Toggle synthesized ambient music using Web Audio API
   const toggleMusic = () => {
@@ -97,8 +99,8 @@ Generated automatically from Rishav Ghosh Digital Space.
 
   return (
     <>
-      {/* Ambient Constellation Network Backdrop */}
-      <CanvasBackground />
+      {/* Ambient Space Backdrop with performance tiers and scroll parallax */}
+      <SpaceBackground scrollProgress={scrollProgress} />
 
       {/* Screen Interactive Custom Cursor */}
       <CustomCursor />
@@ -149,7 +151,7 @@ Generated automatically from Rishav Ghosh Digital Space.
           <Footer />
 
           {/* Floating Neural Chatbot Assistant */}
-          <FloatingAssistant
+          <AskRishav
             isOpen={isAssistantOpen}
             onClose={() => setIsAssistantOpen(false)}
             onOpen={() => setIsAssistantOpen(true)}
