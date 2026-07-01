@@ -30,149 +30,151 @@ export const PROJECTS: Project[] = [
     title: "Project Eclipse",
     subtitle: "Portfolio OS",
     description:
-      "A cinematic portfolio experience built as a full-stack design system. Three.js particle assembly, GSAP scroll choreography, glassmorphism UI — engineered to feel like an Awwwards winner.",
+      "A cinematic portfolio experience and custom-built design system with fluid WebGL canvas particles, parallax scrolls, and touch-sensitive custom cursor mechanics.",
     category: "Web Development",
-    year: "2025",
-    tech: ["React", "TypeScript", "Three.js", "GSAP", "Framer Motion", "Tailwind"],
+    year: "2026",
+    tech: ["React", "TypeScript", "Framer Motion", "WebGL", "GSAP ScrollTrigger", "Tailwind"],
     color: "#d4af37",
     gradient: "linear-gradient(135deg, rgba(212,175,55,0.12) 0%, rgba(8,9,11,0) 60%)",
     featured: true,
-    githubUrl: "https://github.com/rishavghosh/project-eclipse",
-    liveUrl: "#",
-    imageAlt: "Project Eclipse portfolio website",
+    githubUrl: "https://github.com/000100R",
+    liveUrl: "https://github.com/000100R",
+    imageAlt: "Project Eclipse portfolio ecosystem",
     caseStudy: {
       overview:
-        "Project Eclipse is a full-scale portfolio operating system — not a template. Every component, every animation, every token was designed from scratch to express a singular cinematic aesthetic.",
+        "Project Eclipse is a bespoke creative developer workspace and portfolio engineered with precise motion choreography and responsive canvas background layers.",
       challenge:
-        "Portfolios are commoditised. The brief was to create something that reads as an art direction piece, not a developer CV — while still being fast, accessible, and genuinely useful.",
+        "Making a high-performance interactive experience that renders consistently across both responsive touchpoints and high-end desktop displays.",
       solution:
-        "Built on a custom design system (Eclipse Design Language) with a two-accent constraint (electric blue + gold), Fraunces display type, and a component architecture mirroring Linear's engineering standards. Three.js particle portrait as the hero loader doubles as the brand statement.",
+        "Designed with a custom event-loop for smooth scrolling, active viewport-tracked animations, and pointer-fallback logic for touch-screen mobile devices.",
       outcome:
-        "95+ Lighthouse score. Sub-2s FCP. WCAG AA compliant. An experience that functions as both a portfolio and a proof of capability.",
+        "Buttery-smooth 60fps animations, fully responsive, and zero-error TypeScript compiled outputs.",
     },
   },
   {
     id: "laya-sutra",
-    title: "Laya-Sutra",
+    title: "Laya Sutra",
     subtitle: "The Pulse of Tradition",
     description:
-      "A luxury digital invitation for the 2nd Annual Manjistha Utsav. Temple hall aesthetics, Nataraja imagery, golden particles, volumetric oil lamp lighting, and 4D mouse-driven parallax — assembled as a single HTML file.",
+      "A luxury immersive digital invitation showcasing classical temple arts. Integrated golden dust particle fields, volumetric lighting glows, and layered 4D parallax scrolling.",
     category: "Creative",
-    year: "2024",
-    tech: ["HTML", "CSS", "JavaScript", "Three.js", "GSAP", "Canvas API"],
-    color: "#d4af37",
-    gradient: "linear-gradient(135deg, rgba(212,175,55,0.10) 0%, rgba(180,100,20,0.06) 60%)",
+    year: "2026",
+    tech: ["HTML5", "CSS Math", "JavaScript", "Three.js", "GSAP", "Canvas API"],
+    color: "#f59e0b",
+    gradient: "linear-gradient(135deg, rgba(245,158,11,0.12) 0%, rgba(8,9,11,0) 60%)",
     featured: true,
-    liveUrl: "#",
-    imageAlt: "Laya-Sutra digital invitation with temple aesthetics",
+    githubUrl: "https://github.com/000100R",
+    liveUrl: "https://github.com/000100R",
+    imageAlt: "Laya Sutra classic invitation portal",
     caseStudy: {
       overview:
-        "A digital event invitation for Manjistha Utsav, a classical Indian dance and music festival. The brief demanded the weight and reverence of a printed programme — in a browser.",
+        "A premium cultural digital workspace capturing the depth of physical paper and oil-lamp glows in a browser format.",
       challenge:
-        "Classical Indian cultural aesthetics are rich, layered, and easy to reduce to kitsch. The challenge was to translate temple architecture, sacred geometry, and warm ceremonial light into a web medium without losing their gravitas.",
+        "Recreating delicate ceremonial aesthetics like incense drifting smoke without clogging the browser main thread.",
       solution:
-        "A full-bleed immersive experience: SVG Nataraja silhouette on a CSS-animated radial backdrop, a Three.js golden particle field drifting like incense smoke, and a mouse-reactive 4D parallax system with six depth layers. Oil lamp glows rendered as radial gradients with animated opacity.",
+        "Utilized lightweight 2D HTML Canvas particle pools and mathematical radial gradients instead of heavy asset textures.",
       outcome:
-        "Delivered as a zero-dependency single HTML file deployable as an email attachment or hosted link. Viewed on mobile and desktop equally — fully responsive with touch parallax fallback.",
+        "An evocative, zero-dependency digital artifact that functions instantly on all modern smartphones and browsers.",
     },
   },
   {
-    id: "ask-rishav",
-    title: "Ask Rishav",
-    subtitle: "AI Portfolio Assistant",
+    id: "shilpi-art",
+    title: "Shilpi Art",
+    subtitle: "Premium Illustration Portal",
     description:
-      "An offline-first AI assistant with local knowledge base, score-based semantic matching, typing simulation, and a glassmorphic chat panel. No API keys. No external calls.",
+      "A custom-crafted digital exhibition venue displaying design portfolios under modern, minimal typography and fluid glassmorphic structures.",
+    category: "Web Development",
+    year: "2026",
+    tech: ["HTML5", "CSS Grid", "JavaScript", "Canva Pro", "Responsive Layouts"],
+    color: "#38bdf8",
+    gradient: "linear-gradient(135deg, rgba(56,189,248,0.12) 0%, rgba(8,9,11,0) 60%)",
+    featured: true,
+    githubUrl: "https://github.com/000100R",
+    liveUrl: "https://000100r.github.io/shilpi-art/",
+    imageAlt: "Shilpi Art presentation portal",
+    caseStudy: {
+      overview:
+        "Shilpi Art functions as a sleek gallery environment designed to highlight digital illustration and vectors with complete fidelity.",
+      challenge:
+        "Achieving pixel-perfect alignment of diverse aspect-ratio art boards while keeping the site's scrolling experience weightless.",
+      solution:
+        "Constructed with modern responsive CSS columns and custom media targets to eliminate layout shift or jitter.",
+      outcome:
+        "Adopted as the definitive presentation hub for a series of high-impact creative vectors.",
+    },
+  },
+  {
+    id: "ask-rishav-ai",
+    title: "Ask Rishav AI",
+    subtitle: "Intelligent Assistant",
+    description:
+      "An intelligent AI assistant integrated into my portfolio that answers questions about my skills, education, projects, experience, resume and contact information using a local knowledge base.",
     category: "AI",
-    year: "2025",
-    tech: ["React", "TypeScript", "Framer Motion", "NLP (local)", "Tailwind"],
-    color: "#3b82ff",
-    gradient: "linear-gradient(135deg, rgba(59,130,255,0.12) 0%, rgba(8,9,11,0) 60%)",
-    featured: false,
-    githubUrl: "https://github.com/rishavghosh/ask-rishav",
-    imageAlt: "Ask Rishav AI chat assistant interface",
+    year: "2026",
+    tech: ["React", "TypeScript", "Framer Motion", "Local AI Knowledge Base"],
+    color: "#a855f7",
+    gradient: "linear-gradient(135deg, rgba(168,85,247,0.12) 0%, rgba(8,9,11,0) 60%)",
+    featured: true,
+    imageAlt: "Ask Rishav AI Assistant Interface",
     caseStudy: {
       overview:
-        "Most portfolio contact forms go unanswered for days. Ask Rishav is an always-on assistant that answers recruiter and client questions instantly — without any backend or API costs.",
+        "Ask Rishav AI is a custom conversational assistant integrated directly into the portfolio's core ecosystem (Project Eclipse). It enables visitors to explore Rishav's professional and creative path in real-time.",
       challenge:
-        "Building a convincingly intelligent assistant without LLM APIs. The system needs to handle natural language questions across 11 knowledge domains reliably.",
+        "Developing a responsive, conversational-style assistant with zero remote server dependency, avoiding network latency or loading failures.",
       solution:
-        "Keyword-scored matching engine where each knowledge entry carries a weighted keyword list. Longer, more specific keyword matches score higher — preventing short stopwords from misfiring. Responses include deep links back into relevant portfolio sections.",
+        "Built a glassmorphic floating widget using a local weighted keyword NLP matching engine with beautiful typing animations and rapid suggested queries.",
       outcome:
-        "Zero runtime cost. Fully offline. Handles 95% of recruiter questions (who, skills, projects, availability, contact) with human-quality responses. Ships as 4KB of TS.",
+        "Delivered ultra-fast local responses, standard-setting mobile responsiveness, and high engagement through interactive suggestions.",
     },
   },
   {
-    id: "creative-reel",
-    title: "Creative Reel",
-    subtitle: "Motion & Film Direction",
+    id: "workflow-optimizer",
+    title: "AI-Assisted Workflow Optimizer",
+    subtitle: "Generative Prompt System",
     description:
-      "A curated body of film direction, motion design, and branded content. Event coverage, short-form documentary, title sequences, and visual identity in motion.",
-    category: "Creative",
-    year: "2024",
-    tech: ["DaVinci Resolve", "After Effects", "Premiere Pro", "Blender", "Cinema 4D"],
-    color: "#8a8f98",
-    gradient: "linear-gradient(135deg, rgba(138,143,152,0.10) 0%, rgba(8,9,11,0) 60%)",
+      "An advanced prompt engineering toolkit designed to automate video scriptwriting, brand metadata, and creative content briefs with strict context parameters.",
+    category: "AI",
+    year: "2026",
+    tech: ["Prompt Engineering", "Large Language Models", "Metadata SEO", "MS Excel Tracking"],
+    color: "#818cf8",
+    gradient: "linear-gradient(135deg, rgba(129,140,248,0.12) 0%, rgba(8,9,11,0) 60%)",
     featured: false,
-    liveUrl: "https://youtube.com/@rishavghosh",
-    imageAlt: "Creative direction reel thumbnail",
+    githubUrl: "https://github.com/000100R",
+    imageAlt: "AI Prompt workflow optimizer",
     caseStudy: {
       overview:
-        "A compiled body of motion and film work spanning branded event coverage, short documentary, and motion-design identity work for cultural organisations.",
+        "A structured prompt framework designed to turn standard chat-based LLMs into precise content research and metadata scripting assistants.",
       challenge:
-        "Cinematic quality on production budgets that are a fraction of commercial rates — requiring creative economy in every department.",
+        "Preventing generic and cliché model outputs to ensure the generated scripting captures genuine creator identity and pacing.",
       solution:
-        "Developed a personal visual grammar: high-contrast black & white for archival weight, shallow depth of field for intimacy, and a warm grade for cultural events. Post-production in DaVinci Resolve with custom LUTs.",
+        "Introduced strict formatting patterns, detailed role-playing directives, and structured data-logging templates.",
       outcome:
-        "Work featured across event communications for established cultural institutions. Building toward a standalone director's reel.",
+        "Slashed scripting research time by over 50% while maintaining absolute personal tone consistency.",
     },
   },
   {
-    id: "brand-social",
-    title: "Brand Content System",
-    subtitle: "Social Media Direction",
+    id: "brand-curation",
+    title: "YouTube & Brand Curation",
+    subtitle: "Digital Platform Growth",
     description:
-      "A systematic visual identity and content architecture for a brand's social presence. Templates, motion graphics, and a repeatable production pipeline.",
+      "A comprehensive showcase in organic community growth, covering thumbnail graphic design in Canva, mobile video editing, and Excel-driven engagement analysis.",
     category: "Social Media",
-    year: "2024",
-    tech: ["Figma", "After Effects", "Photoshop", "Illustrator", "Canva Pro"],
-    color: "#3b82ff",
-    gradient: "linear-gradient(135deg, rgba(59,130,255,0.08) 0%, rgba(8,9,11,0) 60%)",
+    year: "2026",
+    tech: ["YouTube Studio", "Canva Pro", "Video Editing", "Excel Data Tracking"],
+    color: "#ef4444",
+    gradient: "linear-gradient(135deg, rgba(239,68,68,0.12) 0%, rgba(8,9,11,0) 60%)",
     featured: false,
-    imageAlt: "Brand social media content system",
+    liveUrl: "https://youtube.com/@rawentity-202",
+    imageAlt: "YouTube Channel and Brand Growth",
     caseStudy: {
       overview:
-        "A cohesive content architecture for a brand's multi-platform social presence — Instagram, YouTube, and LinkedIn. Covers static posts, Reels/Shorts, and Stories.",
+        "A professional, systematic approach to platform growth, visual assets branding, and audience retention tracking across multiple platforms.",
       challenge:
-        "Maintaining visual consistency across formats and team members without sacrificing the spontaneity that performs on social media.",
+        "Consistently producing high-impact visuals and optimized metadata while maintaining active community outreach timelines.",
       solution:
-        "A modular Figma template system with locked brand elements and unlocked content zones. Motion graphic components built as After Effects presets for the production team.",
+        "Developed modular Figma and Canva layouts with locked brand grids, combined with structured scheduling files.",
       outcome:
-        "Reduced per-post production time by 60%. Visual consistency score improved significantly in monthly brand audits.",
-    },
-  },
-  {
-    id: "ai-workflow",
-    title: "AI Dev Tooling",
-    subtitle: "Workflow Automation",
-    description:
-      "A suite of AI-assisted development tools: CLI utilities, prompt engineering templates, and LLM integration patterns for frontend workflows.",
-    category: "AI",
-    year: "2025",
-    tech: ["Python", "Node.js", "OpenAI API", "Anthropic SDK", "Shell", "TypeScript"],
-    color: "#3b82ff",
-    gradient: "linear-gradient(135deg, rgba(59,130,255,0.10) 0%, rgba(30,58,110,0.06) 60%)",
-    featured: false,
-    githubUrl: "https://github.com/rishavghosh",
-    imageAlt: "AI development workflow tooling",
-    caseStudy: {
-      overview:
-        "A personal toolkit of AI-assisted utilities built to reduce friction in daily development and creative workflows.",
-      challenge:
-        "LLM integrations often add complexity rather than removing it — brittle prompts, inconsistent output, and slow iteration loops.",
-      solution:
-        "Built opinionated wrappers around API clients with structured output schemas, retry logic, and prompt versioning. CLI-first design so tools compose with existing shell workflows.",
-      outcome:
-        "50%+ reduction in time spent on repetitive development tasks. Patterns documented and open-sourced on GitHub.",
+        "Achieved steady organic growth metrics, cohesive visual style consistency, and seamless publishing pipelines.",
     },
   },
 ];

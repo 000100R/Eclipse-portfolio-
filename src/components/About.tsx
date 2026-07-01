@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'motion/react';
 import { Quote, Terminal, Sparkles, Cpu, Award, Zap, Code, ShieldCheck } from 'lucide-react';
+import { portfolioData } from '../data';
 import aboutImage from '@/assets/about.jpg';
 
 interface StatCardProps {
@@ -116,13 +117,8 @@ export default function About() {
   });
   const yParallax = useTransform(scrollYProgress, [0, 1], [-40, 40]);
 
-  // Elite Statistics data as explicitly requested
-  const stats = [
-    { label: "Projects Completed", value: "50+" },
-    { label: "Technologies Learned", value: "24+" },
-    { label: "Years Learning", value: "8+" },
-    { label: "Open Source Contributions", value: "100+" }
-  ];
+  // Real Statistics data from profile config
+  const stats = portfolioData.statistics;
 
   return (
     <section

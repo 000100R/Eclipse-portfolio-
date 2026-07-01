@@ -52,37 +52,46 @@ export default function App() {
 ==================================================
 RISHAV GHOSH - PORTFOLIO RESUME
 ==================================================
-Senior Staff Software Engineer & Creative Technologist
-ghoshrishav184@gmail.com | San Francisco, CA
+Developer • AI Enthusiast • Creative Technologist
+ghoshrishav184@gmail.com | Kolkata, West Bengal, India
+Phone: 7439868702 | GitHub: github.com/000100R
 
 PROFESSIONAL SUMMARY:
-Over 8 years of elite engineering leadership spanning Vercel, Stripe, and Apple. 
-Pioneered complex UI layouts, fast rendering engines, custom interactive SVG 
-matrices, and standard-setting open-source packages. Guaranteed pass on Core 
-Web Vitals and strict accessibility constraints.
+Dynamic Creative Technologist and Developer bridging the gap between high-end 
+graphic design, mobile video curation, and modern front-end technologies. 
+Combines advanced Canva curation, YouTube channel management, and structured 
+prompt engineering with custom React layouts to build elegant, cinematic, 
+and highly optimized digital experiences.
 
 TECHNICAL CAPABILITIES:
-- Languages: TypeScript, JavaScript (ESNext), HTML5/CSS Math, GLSL
-- Rendering: WebGL, HTML5 Canvas 2D/3D, SVG layout architectures
-- Frameworks: React 19, Next.js, Node.js, Express, Framer Motion, Tailwind CSS
-- Tooling: WebPack, Vite, Esbuild, Docker, Git, CI/CD, Lighthouse, Performance Auditing
+- Web Design & Development: React, TypeScript, HTML5, CSS Columns, Tailwind CSS, Framer Motion
+- Creative Suite: Canva Pro (Thumbnails, Brand Vectors, Logo Layouts), Video Production & Editing
+- AI & Prompt Engineering: Custom Context Prompting, LLM research pipelines, Foundational ML/DL/CV
+- Data & Productivity: MS Excel Analytics (Engagement index maps), MS Word, Remote Team Management
+
+EDUCATION:
+- Higher Secondary Certificate - Mukul Bose Memorial Institution (Kolkata, India)
 
 CHRONOLOGICAL EXPERIENCE:
-1. Vercel - Lead Creative Developer (2024 - Present)
-   - Improved dashboard interaction times by 42%.
-   - Created the Next.js DX Motion animation library.
-   - Built 3D conference timelines animating 1.2M nodes.
+1. YouTube Content Creator & Channel Manager (2023 - Present)
+   Self-Managed / Personal Channel & Social Pages | Kolkata, India / Remote
+   - Scripted, filmed, edited, and published engaging video content end-to-end via YouTube Studio.
+   - Designed high-impact thumbnails and branding layouts using Canva Pro to build cohesive aesthetics.
+   - Built and managed digital reach and scheduling across Instagram and Facebook.
+   
+2. AI-Assisted Content Researcher & Tech Explorer (2024 - Present)
+   Freelance & Learning Ecosystem | Kolkata, India
+   - Developed custom prompt library to automate content briefs, scripts, and keyword research.
+   - Maintained audience metrics, content calendars, and growth logs using advanced MS Excel formulas.
+   - Explored foundational neural architectures, CNN layers, and computer vision models.
 
-2. Stripe - Senior Full-Stack UI Architect (2022 - 2024)
-   - Raised conversion on next-gen checkouts by 12.4%.
-   - Built SVG transaction flow models with physics gravity structures.
-
-3. Apple - Frontend Design Engineer (2020 - 2022)
-   - Engineered launch visualizers for Vision Pro & iPhone 13.
-   - Designed hardware-accelerated Safari motion standards.
+REAL PROJECTS PREVIEW:
+- Project Eclipse (2026): A cinematic React + Three.js design system with touch-fallback cursors.
+- Laya Sutra (2026): A multi-layered, interactive 4D parallax temple festival invitation.
+- Shilpi Art (2026): A glassmorphic exhibition and visual portfolio curation site.
 
 ==================================================
-Generated automatically from Rishav Ghosh Digital Space.
+Generated automatically from Rishav Ghosh Digital Space (2026).
 ==================================================
     `;
 

@@ -11,12 +11,20 @@ export default function CustomCursor() {
   const trailRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    // Check if device supports fine pointers (desktops with mouse)
-    const mediaQuery = window.matchMedia('(pointer: fine)');
-    setIsMobile(!mediaQuery.matches);
+    // Check if device supports fine pointers or has touch capabilities
+    const checkDevice = () => {
+      const mediaQuery = window.matchMedia('(pointer: fine)');
+      const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      const isMobileAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      setIsMobile(!mediaQuery.matches || hasTouch || isMobileAgent);
+    };
 
-    const handleMediaQueryChange = (e: MediaQueryListEvent) => {
-      setIsMobile(!e.matches);
+    checkDevice();
+
+    const mediaQuery = window.matchMedia('(pointer: fine)');
+    const handleMediaQueryChange = () => {
+      checkDevice();
     };
 
     mediaQuery.addEventListener('change', handleMediaQueryChange);

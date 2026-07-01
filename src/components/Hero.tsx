@@ -118,8 +118,8 @@ export default function Hero({ onOpenCommandPalette, onOpenAssistant }: HeroProp
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
           className="flex flex-col items-center"
         >
-          <span className="text-xs sm:text-sm font-mono tracking-[0.35em] text-blue-400/90 uppercase mb-4 font-semibold">
-            CREATIVE VISUAL CREATOR &amp; DESIGNER
+          <span className="text-xs sm:text-sm font-mono tracking-[0.25em] text-blue-400/90 uppercase mb-4 font-semibold">
+            Developer • AI Enthusiast • Creative Technologist
           </span>
           
           <h1 className="text-6xl sm:text-8xl md:text-[9.5rem] font-sans font-black tracking-tighter text-white leading-[0.85] mb-8">
@@ -128,11 +128,11 @@ export default function Hero({ onOpenCommandPalette, onOpenAssistant }: HeroProp
 
           {/* Large Bold Headline with Animated Gradient on Important Words */}
           <h2 className="text-xl sm:text-3xl md:text-4xl font-sans font-bold tracking-tight text-zinc-400 max-w-3xl leading-relaxed">
-            Crafting high-fidelity, ultra-premium{' '}
+            Building modern web experiences with{' '}
             <span className="text-gradient-animated font-extrabold">
-              visual narratives
-            </span>{' '}
-            and digital environments.
+              AI, Design &amp; Creativity
+            </span>
+            .
           </h2>
         </motion.div>
 
@@ -143,8 +143,8 @@ export default function Hero({ onOpenCommandPalette, onOpenAssistant }: HeroProp
           transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="text-xs sm:text-sm font-mono text-zinc-500 max-w-xl text-center mt-6 leading-relaxed"
         >
-          Specializing in visual content pipelines, Canva layouts, YouTube production, 
-          and AI-assisted prompt optimization.
+          Specializing in custom React interfaces, Canva layouts, YouTube channel growth, 
+          and AI-assisted prompt workflows.
         </motion.p>
 
         {/* Two Premium CTA Buttons */}

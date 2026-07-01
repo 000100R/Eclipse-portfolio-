@@ -10,21 +10,22 @@ export default function PageLoader({ onComplete }: PageLoaderProps) {
   const [shouldRender, setShouldRender] = useState(true);
 
   useEffect(() => {
-    // Elegant, varying ticks to feel premium and organic
+    // Elegant, varying ticks to take ~2.2 seconds to reach 100%, plus 800ms pause = 3 seconds total
     let currentProgress = 0;
     const interval = setInterval(() => {
-      const increment = Math.floor(Math.random() * 8) + 2; // Random 2-9%
+      // Average increment is ~2.45% per tick. 100/2.45 = 41 ticks. 41 * 55ms = ~2.25s.
+      const increment = Math.random() * 2.5 + 1.2;
       currentProgress = Math.min(currentProgress + increment, 100);
-      setProgress(currentProgress);
+      setProgress(Math.floor(currentProgress));
 
       if (currentProgress === 100) {
         clearInterval(interval);
         setTimeout(() => {
           setShouldRender(false);
           onComplete();
-        }, 800); // Elegant pause at 100%
+        }, 800); // Elegant pause at 100% (totaling 3 seconds)
       }
-    }, 70);
+    }, 55);
 
     return () => clearInterval(interval);
   }, [onComplete]);

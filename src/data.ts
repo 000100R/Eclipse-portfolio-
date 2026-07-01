@@ -6,8 +6,8 @@ import resumePdf from '@/assets/resume.pdf';
 export const portfolioData = {
   personalInfo: {
     name: "Rishav Ghosh",
-    title: "YouTube Creator, Creative Designer & AI Enthusiast",
-    subtitle: "Bridging the gap between cinematic storytelling, high-end graphic design, and interactive technology.",
+    title: "Developer • AI Enthusiast • Creative Technologist",
+    subtitle: "Building Modern Web Experiences with AI, Design & Creativity.",
     email: "ghoshrishav184@gmail.com",
     location: "Kolkata, West Bengal, India",
     socials: {
@@ -130,6 +130,30 @@ export const portfolioData = {
         "Developed a reliable prompt library currently used to generate high-quality outlines and descriptions in seconds.",
         "Acquired advanced self-taught foundational concepts in ML, Deep Learning, and Computer Vision."
       ]
+    },
+    {
+      id: "proj4",
+      title: "Ask Rishav AI",
+      tagline: "Intelligent Assistant",
+      description: "An intelligent AI assistant integrated into my portfolio that answers questions about my skills, education, projects, experience, resume and contact information using a local knowledge base.",
+      longDescription: "Ask Rishav AI is an intelligent conversational agent integrated seamlessly into Project Eclipse to provide instantaneous, rich, and responsive context regarding Rishav Ghosh's multidisciplinary achievements.",
+      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd3ed?auto=format&fit=crop&w=1200&q=80",
+      tags: ["React", "TypeScript", "Framer Motion", "Local AI Knowledge Base"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/000100R",
+      stats: [
+        { label: "UI Design", value: "Glassmorphic" },
+        { label: "Speed", value: "Sub-millisecond" },
+        { label: "Platform", value: "Project Eclipse" }
+      ],
+      challenges: [
+        "Developing a conversational assistant that responds instantly with high accuracy without remote server dependencies or API costs.",
+        "Enabling suggested question prompts and typing animations that match the cinematic theme of the parent interface."
+      ],
+      outcomes: [
+        "Constructed a high-fidelity conversational widget with typing effect simulations.",
+        "Achieved absolute mobile responsiveness and instant local keyword-guided response lookups."
+      ]
     }
   ] as Project[],
 
@@ -168,32 +192,46 @@ export const portfolioData = {
 
   galleryImages: [
     {
-      id: "gal1",
-      title: "Personal Portfolio Workspace",
-      category: "Creative Space",
-      image: heroImage,
-      description: "My workspace focused on visual creation, scripting, and studying AI architectures."
+      id: "gal-webdev",
+      title: "Modern Interface Interactivity",
+      category: "Web Development",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+      description: "Building high-performance responsive custom grids, layout frameworks, and fluid CSS motion transitions."
     },
     {
-      id: "gal2",
-      title: "Creative Visual Branding",
+      id: "gal-aiprojects",
+      title: "LLM Content Research & Automation",
+      category: "AI Projects",
+      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      description: "Architecting prompt templates and parameter boundaries to structure scripts and target niches cleanly."
+    },
+    {
+      id: "gal-video",
+      title: "Cinematic Video Production",
+      category: "Video Editing",
+      image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80",
+      description: "Synchronizing audio tracks, performing custom pacing cuts, and tuning color correction grades across content edits."
+    },
+    {
+      id: "gal-graphics",
+      title: "Canva Brand Curation",
       category: "Graphic Design",
-      image: aboutImage,
-      description: "Visual thumbnail layouts and brand vectors produced using modern layout software."
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80",
+      description: "Drafting professional brand templates, vector layouts, channel banners, and thumb-stopping visual palettes."
     },
     {
-      id: "gal3",
-      title: "Interactive Shilpi Art Portal",
-      category: "UI Development",
-      image: "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=800&q=80",
-      description: "Designing the custom glassmorphic art exhibition space."
+      id: "gal-youtube",
+      title: "@rawentity-202 Platform Growth",
+      category: "YouTube Curation",
+      image: "https://images.unsplash.com/photo-1585647347483-22b66260dfff?auto=format&fit=crop&w=800&q=80",
+      description: "Orchestrating end-to-end video scheduling, keyword optimization, description metadata, and audience retention indexes."
     },
     {
-      id: "gal4",
-      title: "Data and Performance Ledger",
-      category: "Analytics",
-      image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-      description: "Analyzing audience growth metrics and engagement indexes in Microsoft Excel."
+      id: "gal-facebook",
+      title: "Cross-Platform Social Reach",
+      category: "Facebook Content",
+      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80",
+      description: "Designing responsive posts, reels, and visual announcements to build and engage digital social communities."
     }
   ] as GalleryImage[],
 

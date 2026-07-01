@@ -1,8 +1,8 @@
 /**
  * knowledge.ts
  * Local knowledge base for the Ask Rishav AI assistant.
- * Single source of truth — update this file when portfolio content changes.
- * No API keys. No external calls. Fully offline.
+ * Single source of truth — updated with Rishav Ghosh's authentic profile.
+ * Fully offline, NLP keyword-scored matching engine.
  */
 
 export interface KnowledgeEntry {
@@ -16,97 +16,123 @@ export interface KnowledgeEntry {
 export const KNOWLEDGE_BASE: KnowledgeEntry[] = [
   {
     id: "about",
-    label: "Who is Rishav?",
-    keywords: ["who", "about", "rishav", "introduce", "background", "person", "him"],
+    label: "Who is Rishav Ghosh?",
+    keywords: ["who", "about", "rishav", "ghosh", "profile", "background", "introduce", "whois", "bio"],
     answer:
-      "Rishav Ghosh is a visual artist, filmmaker, and creative technologist based in India. He works at the intersection of cinema, design, and code — building experiences that feel cinematic and intentional. From branded digital invitations to full-stack web applications, his work is defined by a pursuit of craft over shortcuts.",
+      "Rishav Ghosh is a Developer, AI Enthusiast, and Creative Technologist based in Kolkata, West Bengal, India. He bridges the gap between modern web development, eye-catching visual design, and cinematic digital storytelling. By pairing hands-on platform curation with a strong understanding of artificial intelligence, Rishav builds highly immersive web experiences that feel deliberate, fluid, and premium.",
+    links: [{ label: "Read Story", href: "#about" }],
   },
   {
     id: "skills",
     label: "Skills & Stack",
-    keywords: ["skill", "stack", "tech", "language", "framework", "tool", "code", "use", "know", "expertise"],
+    keywords: ["skill", "stack", "tech", "technology", "language", "framework", "tool", "use", "know", "expertise", "canva", "excel", "react"],
     answer:
-      "Rishav's core stack spans creative and engineering disciplines:\n\n• **Creative** — Adobe Creative Suite, DaVinci Resolve, Blender, Figma\n• **Frontend** — React, TypeScript, Tailwind CSS, Framer Motion, GSAP, Three.js\n• **Backend** — Node.js, Python, REST APIs\n• **3D & Motion** — React Three Fiber, WebGL, GSAP ScrollTrigger\n• **Tools** — Git, Vite, Vercel, Notion\n\nHe's equally comfortable directing a shoot as he is architecting a component library.",
+      "Rishav has developed a versatile cross-disciplinary skill set spanning creative production, web interface design, and AI workflows:\n\n• **Creative & Graphic Design** — Canva Graphic Design (expert thumbnails, banners, custom vectors), mobile & desktop video editors (audio synchronization, color grading, pacing), and platform content branding.\n• **Web Development** — React, TypeScript, Tailwind CSS, Framer Motion, HTML5, CSS columns/layouts, and responsive interface building.\n• **AI & Prompt Engineering** — Context-aware structured prompt engineering, AI-assisted content research, large language model automation, and foundational concepts of Machine Learning, Deep Learning, and Computer Vision (CNNs, neural perception).\n• **Office & Data Analytics** — Advanced Microsoft Excel (audience retention tracking, record sorting, formulas) and structured MS Word script formatting.\n• **Productivity** — Remote work coordination, rapid turnarounds, and structured file architecture.",
+    links: [{ label: "View Skills", href: "#skills" }],
   },
   {
     id: "experience",
     label: "Experience",
-    keywords: ["experience", "work", "job", "career", "company", "role", "position", "client"],
+    keywords: ["experience", "work", "job", "career", "company", "role", "position", "chronicle", "history", "timeline"],
     answer:
-      "Rishav has worked across film production, branded content, and digital product design. His professional work includes:\n\n• Directing and editing branded films and cultural event productions\n• Designing and developing premium web experiences for clients\n• Creating digital invitations and interactive event campaigns\n• Visual direction for music, theatre, and live performance events\n\nHe operates as a multi-disciplinary creative — directing, designing, and building end-to-end.",
+      "Rishav operates as a self-managed creative and remote tech explorer. His core experience covers:\n\n• **YouTube Content Creator & Channel Manager (2023 - Present)**: Scripting, filming, editing, metadata SEO, and thumbnail curation. Designed professional brand identities in Canva and built an organic community.\n• **AI Content Researcher & Explorer (2024 - Present)**: Integrating generative AI into digital content pipelines, automating research documentation, and organizing structured logs/audience analytics in MS Excel.\n• **Creative Web Interface Curation**: Directing and developing customized client visual portfolios and invitations, like Shilpi Art and Laya Sutra, using modern front-end layout strategies.",
+    links: [{ label: "Explore Timeline", href: "#experience" }],
   },
   {
     id: "education",
     label: "Education",
-    keywords: ["education", "study", "degree", "university", "college", "school", "qualification"],
+    keywords: ["education", "study", "degree", "university", "college", "school", "qualification", "high school", "credential"],
     answer:
-      "Rishav's education spans formal and self-directed learning. His technical and creative skills are built from a combination of institutional training in film and visual arts, and extensive self-study in software engineering, 3D design, and interactive media.",
+      "Rishav holds a Higher Secondary Certificate from the Mukul Bose Memorial Institution in Kolkata, India. He reinforces his academic baseline with continuous, self-directed deep dives into software engineering, advanced UI motion physics, graphic design layout rules, and modern artificial intelligence architectures.",
   },
   {
     id: "projects",
-    label: "Projects",
-    keywords: ["project", "built", "made", "portfolio", "work", "product", "app", "website", "create"],
+    label: "Projects Overview",
+    keywords: ["projects", "built", "made", "portfolio", "work", "apps", "websites", "curation", "case study", "shilpi", "laya", "eclipse"],
     answer:
-      "Notable works include:\n\n• **Project Eclipse** — This portfolio itself. A cinematic React + TypeScript experience with Three.js particle effects, GSAP animations, and glassmorphism UI\n• **Laya-Sutra: The Pulse of Tradition** — A luxury digital invitation for the Manjistha Utsav with temple aesthetics, Nataraja imagery, and 4D mouse-parallax effects\n• **Interactive Event Campaigns** — Multiple branded HTML/CSS/JS experiences for cultural and artistic events\n• **Creative Web Experiments** — Ongoing explorations in WebGL, Lenis scroll, and motion design",
-    links: [{ label: "View Projects", href: "#projects" }],
+      "Rishav has created several high-impact creative and technical projects in 2026:\n\n• **Project Eclipse** — A cinematic portfolio operating system built with React, TypeScript, and Three.js canvas backgrounds.\n• **Laya Sutra** — An immersive, luxury digital classical dance invitation featuring golden particle drift, volumetric lighting, and mouse-reactive 4D parallax scrolls.\n• **Shilpi Art** — A premium online illustration and artwork exhibition space with smooth glassmorphic cards and elegant typography.\n• **AI-Assisted Workflow Optimizer** — An advanced prompt engineering framework that speeds up creative scripting and metadata research by 2x.",
+    links: [{ label: "Browse Projects", href: "#projects" }],
   },
   {
-    id: "creative",
-    label: "Creative Works",
-    keywords: ["film", "cinema", "creative", "video", "direct", "art", "visual", "photograph", "design", "motion"],
+    id: "project-eclipse",
+    label: "Project Eclipse",
+    keywords: ["eclipse", "project-eclipse", "portfolio-os", "three.js", "particles", "loader", "webgl"],
     answer:
-      "Rishav's creative output spans several mediums:\n\n• **Film & Video** — Short films, branded documentaries, event coverage\n• **Motion Design** — Titles, transitions, animated brand identities\n• **Photography** — Cinematic black and white portraiture, event stills\n• **Digital Art** — Interactive 3D experiences, generative visual work\n• **Event Design** — Full visual direction for cultural performances and exhibitions\n\nHis aesthetic language is consistent across mediums: cinematic depth, cultural richness, minimal luxury.",
+      "Project Eclipse is Rishav's own digital workspace and portfolio. Built in 2026 using React, TypeScript, and Framer Motion, it features a fluid WebGL particle assembly as a background, a custom performance-optimized mouse trail custom cursor (with automatic touch fallback), and beautiful, choreographed scrolling. It serves as both his hub and a testament to his engineering standards.",
+    links: [{ label: "View Case Study", href: "#projects" }],
   },
   {
-    id: "youtube",
-    label: "YouTube",
-    keywords: ["youtube", "video", "channel", "watch", "content", "upload"],
+    id: "laya-sutra",
+    label: "Laya Sutra",
+    keywords: ["laya", "sutra", "laya-sutra", "invitation", "manjistha", "utsav", "temple", "nataraja"],
     answer:
-      "Rishav shares creative process videos, filmmaking insights, and technical explorations on YouTube. His channel features behind-the-scenes content from productions, web development experiments, and commentary on craft.",
-    links: [{ label: "YouTube Channel", href: "https://youtube.com/@rishavghosh" }],
+      "Laya Sutra is an immersive, luxury digital invitation designed in 2026 for the 2nd Annual Manjistha Utsav (a classical Indian dance festival). It features rich temple aesthetics, golden dust particle drifts simulating burning incense smoke, custom radial oil-lamp glow animations, and a smooth, multi-layered 4D mouse-parallax scrolling experience.",
+    links: [{ label: "Check Laya Sutra", href: "#projects" }],
+  },
+  {
+    id: "shilpi-art",
+    label: "Shilpi Art",
+    keywords: ["shilpi", "art", "shilpi-art", "gallery", "illustration", "vector", "exhibition"],
+    answer:
+      "Shilpi Art is a custom-curated, premium exhibition gallery designed to display artistic portfolios, vector layouts, and illustrations. Developed with a high-contrast cinematic layout, glassmorphic cards, and zero layout shift, it lets digital artists present their work under a highly polished, museum-grade light.",
+    links: [{ label: "Launch Shilpi Art", href: "https://000100r.github.io/shilpi-art/" }],
   },
   {
     id: "github",
-    label: "GitHub",
-    keywords: ["github", "code", "repo", "repository", "open source", "source"],
+    label: "GitHub Profile",
+    keywords: ["github", "code", "repo", "repository", "source", "000100R"],
     answer:
-      "Rishav's GitHub hosts his development projects, including this portfolio (Project Eclipse), web experiments, and open explorations in creative coding. Most repositories reflect his interest in cinematic UI and motion-forward web experiences.",
-    links: [{ label: "GitHub Profile", href: "https://github.com/rishavghosh" }],
+      "Rishav's open-source projects, web layout experiments, and creative structures are hosted on GitHub under the username **000100R**. His repositories highlight clean, reusable styling, modular TypeScript logic, and custom WebGL explorations.",
+    links: [{ label: "GitHub Profile", href: "https://github.com/000100R" }],
   },
   {
-    id: "contact",
-    label: "Contact",
-    keywords: ["contact", "email", "reach", "hire", "message", "talk", "connect", "linkedin", "social"],
+    id: "youtube",
+    label: "YouTube Channel",
+    keywords: ["youtube", "video", "channel", "content", "subscribe", "subscribers", "upload", "vlog", "rawentity"],
     answer:
-      "The best way to reach Rishav is through the contact section of this portfolio or directly via email. He's also active on LinkedIn and Instagram for professional and creative connections.\n\nFor project inquiries, include a brief description of the work and timeline — he responds within 24–48 hours.",
-    links: [{ label: "Go to Contact", href: "#contact" }],
+      "Rishav manages a professional, self-branded YouTube channel called **@rawentity-202**. On his channel, he publishes creative process logs, video editing breakdowns, and technical explanations of AI and design methodologies. He curates the entire channel pipeline, from scripting and video pacing to Canva thumbnail design.",
+    links: [{ label: "Visit YouTube", href: "https://youtube.com/@rawentity-202" }],
+  },
+  {
+    id: "creative-works",
+    label: "Creative Works",
+    keywords: ["creative", "works", "video editing", "graphic design", "editing", "facebook", "content", "creation", "design"],
+    answer:
+      "Rishav's creative portfolio is highly active across several platforms:\n\n• **Web Development**: Creating smooth, responsive interfaces (Shilpi Art, Project Eclipse) styled with glassmorphism and custom animation trails.\n• **Graphic Design**: Custom branded banners, professional YouTube thumbnails, and high-conversion vector assets created in Canva Pro.\n• **Video Editing**: High-impact storytelling, seamless pacing, and audio synchronization on mobile and desktop editors.\n• **Social Media Curation**: Designing and scheduling content across Facebook and Instagram to drive organic engagement, backed by data logs maintained in MS Excel.",
+    links: [{ label: "Browse Gallery", href: "#gallery" }],
   },
   {
     id: "resume",
     label: "Resume",
-    keywords: ["resume", "cv", "download", "pdf", "qualification", "hire"],
+    keywords: ["resume", "cv", "download", "pdf", "hiring", "credentials"],
     answer:
-      "Rishav's resume covers his full creative and technical background — film direction, digital design, and frontend engineering. You can download the latest PDF from the Contact section.",
-    links: [{ label: "Download Resume", href: "#contact" }],
+      "Rishav Ghosh's official, formatted resume details his creative and technical credentials. You can trigger a direct PDF download of his resume in the Contact section of this portfolio, or by opening the Command Palette (⌘K) and selecting the download option.",
+    links: [{ label: "Go to Contact & Resume", href: "#contact" }],
   },
   {
-    id: "availability",
-    label: "Availability",
-    keywords: ["available", "availability", "hire", "freelance", "work together", "open", "project", "collaborate"],
+    id: "contact",
+    label: "Contact & Location",
+    keywords: ["contact", "email", "phone", "location", "hire", "talk", "message", "connect", "reach", "gmail", "mail", "number"],
     answer:
-      "Rishav is currently **open to select collaborations**. He takes on:\n\n• Premium web design & development\n• Creative direction for brands and events\n• Film and video production\n• Motion design and interactive experiences\n\nReach out through the contact section with a brief and he'll get back to you quickly.",
-    links: [{ label: "Let's Talk", href: "#contact" }],
+      "You can connect with Rishav Ghosh instantly through the following channels:\n\n• **Email**: ghoshrishav184@gmail.com\n• **Phone**: 7439868702\n• **Location**: Kolkata, West Bengal, India\n\nYou can also submit a secure message through the stylized contact form at the bottom of this website. He is highly responsive and typically replies within 24 hours.",
+    links: [{ label: "Go to Contact Form", href: "#contact" }],
+  },
+  {
+    id: "career-goals",
+    label: "Career Goals & Vision",
+    keywords: ["goals", "career", "vision", "future", "aim", "ambition", "learning", "growth"],
+    answer:
+      "Rishav envisions a future where digital media is highly dynamic, personalized, and AI-optimized. His objective is to continue mastering advanced prompt engineering pipelines, high-end design layouts, and modern front-end technologies to construct immersive, cinematic spaces that captivate audiences and optimize creative turnaround times.",
   },
 ];
 
 export const QUICK_SUGGESTIONS = [
-  "Who is Rishav?",
+  "Who is Rishav Ghosh?",
   "Skills & Stack",
-  "Projects",
+  "Projects Overview",
   "Creative Works",
-  "Availability",
-  "Contact",
-  "Resume",
+  "Contact & Location",
+  "Download Resume",
 ];
 
 /** Score-based matcher — returns the best matching entry or null. */
@@ -120,7 +146,9 @@ export function matchKnowledge(query: string): KnowledgeEntry | null {
   for (const entry of KNOWLEDGE_BASE) {
     let score = 0;
     for (const kw of entry.keywords) {
-      if (q.includes(kw)) score += kw.length; // longer keyword = higher confidence
+      if (q.includes(kw)) {
+        score += kw.length; // longer keyword = higher confidence weight
+      }
     }
     if (score > bestScore) {
       bestScore = score;
@@ -132,4 +160,4 @@ export function matchKnowledge(query: string): KnowledgeEntry | null {
 }
 
 export const FALLBACK_RESPONSE =
-  "I'm not sure about that — try asking about Rishav's skills, projects, experience, availability, or how to contact him.";
+  "I'm not completely sure about that — try asking me about Rishav's projects (like Project Eclipse, Shilpi Art, or Laya Sutra), his design and AI skills, his YouTube channel, or how to contact him!";
