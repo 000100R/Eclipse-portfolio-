@@ -212,7 +212,7 @@ export default function CommandPalette({
             </div>
 
             {/* Suggestions list */}
-            <div className="max-h-80 overflow-y-auto py-2">
+            <div className="max-h-64 sm:max-h-80 overflow-y-auto py-2">
               {filteredCommands.length > 0 ? (
                 filteredCommands.map((cmd, idx) => {
                   const Icon = cmd.icon;

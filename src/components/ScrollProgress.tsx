@@ -54,6 +54,7 @@ export default function ScrollProgress() {
               onClick={handleScrollToTop}
               className="relative group flex items-center justify-center w-12 h-12 rounded-full border border-white/10 bg-black/60 backdrop-blur-md hover:border-sky-400/50 hover:bg-black/80 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] transition-all duration-300 cursor-none"
               title="Return to Apex"
+              aria-label="Scroll back to top"
               data-cursor="GO TOP"
             >
               {/* Circular SVG Progress */}

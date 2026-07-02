@@ -37,9 +37,9 @@ export function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="relative w-full py-[var(--section-padding)]"
+      className="py-24 w-full relative overflow-hidden px-6 md:px-12 select-none"
     >
-      <div className="mx-auto max-w-wide px-[var(--gutter)]">
+      <div className="max-w-7xl mx-auto">
 
         {/* ── Section header ── */}
         <div className="mb-12 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
@@ -49,13 +49,14 @@ export function Projects() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: duration.slow, ease: easing.eclipse }}
           >
-            <p className="eyebrow mb-3">Selected Work</p>
+            <span className="text-[10px] font-mono tracking-widest text-gold-warm uppercase block mb-3">
+              03 // SELECTED CREATIVE WORK
+            </span>
             <h2
               id="projects-heading"
-              className="font-display text-4xl font-semibold leading-tight tracking-tighter text-eclipse-white sm:text-5xl"
+              className="text-3xl md:text-5xl font-display font-light tracking-tight text-white mt-2"
             >
-              Projects &{" "}
-              <em className="text-gradient-gold not-italic">Case Studies</em>
+              PROJECTS & <span className="font-medium text-gradient-gold">CASE STUDIES</span>
             </h2>
           </motion.div>
 

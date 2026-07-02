@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'motion/react';
-import { Quote, Terminal, Sparkles, Cpu, Award, Zap, Code, ShieldCheck } from 'lucide-react';
+import { Quote } from 'lucide-react';
 import { portfolioData } from '../data';
 import aboutImage from '@/assets/about.jpg';
 
@@ -58,7 +58,7 @@ function StatCard({ value, label, index }: StatCardProps) {
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
       whileHover={{ y: -6, scale: 1.02 }}
-      className="relative group p-6 rounded-2xl bg-white/[0.01] border border-white/5 backdrop-blur-md overflow-hidden transition-all duration-300 hover:border-blue-500/25 shadow-[0_4px_30px_rgba(0,0,0,0.4)]"
+      className="relative group p-6 rounded-2xl bg-glass border-glass overflow-hidden transition-all duration-300 hover:border-blue-500/25 shadow-[0_4px_30px_rgba(0,0,0,0.4)]"
     >
       {/* Subtle Card Background Hover Glow */}
       <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/5 to-gold-warm/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -124,7 +124,7 @@ export default function About() {
     <section
       id="about"
       ref={containerRef}
-      className="py-28 md:py-36 w-full relative overflow-hidden bg-[#050505] px-6 md:px-12 select-none"
+      className="py-24 w-full relative overflow-hidden bg-[#050505] px-6 md:px-12 select-none"
     >
       {/* Decorative Background Accents: Gold and Blue ambient radial halos */}
       <div className="absolute top-1/4 left-10 w-[500px] h-[500px] rounded-full bg-blue-500/[0.03] blur-[140px] pointer-events-none" />
@@ -212,13 +212,12 @@ export default function About() {
               className="flex flex-col gap-3"
             >
               <div className="flex items-center gap-2.5">
-                <span className="w-2.5 h-[1.5px] bg-blue-500" />
-                <span className="text-[10px] font-mono tracking-[0.25em] text-blue-400 font-bold uppercase">
-                  ABOUT ME
+                <span className="text-[10px] font-mono tracking-widest text-blue-400 uppercase">
+                  01 // NARRATIVE BIOGRAPHY
                 </span>
               </div>
-              <h3 className="text-3xl md:text-5xl font-sans font-black tracking-tight text-white leading-tight">
-                Crafting Digital Experiences with <span className="text-gradient-animated font-extrabold">Creativity &amp; Precision</span>
+              <h3 className="text-3xl md:text-5xl font-display font-light tracking-tight text-white leading-tight mt-2">
+                CRAFTING WITH <span className="font-medium text-gradient-gold">CREATIVITY &amp; PRECISION</span>
               </h3>
             </motion.div>
 
@@ -253,8 +252,8 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.8, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              whileHover={{ scale: 1.01, y: -2 }}
-              className="p-6 md:p-8 rounded-2xl bg-white/[0.01] border border-white/5 relative overflow-hidden group shadow-[0_10px_30px_rgba(0,0,0,0.3)] backdrop-blur-md"
+              whileHover={{ scale: 1.01, y: -4 }}
+              className="p-6 md:p-8 rounded-2xl bg-glass border-glass relative overflow-hidden group shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
             >
               <div className="absolute top-0 left-0 w-32 h-32 bg-blue-500/[0.015] rounded-br-full pointer-events-none" />
               <Quote className="w-10 h-10 text-blue-400/10 absolute top-4 right-6 group-hover:text-blue-400/20 transition-colors duration-300" />

@@ -32,15 +32,32 @@ export default function Footer() {
             <span>LATENCY: 4.2ms</span>
           </div>
           <div className="flex items-center gap-3">
-            <a href="https://github.com/000100R" target="_blank" rel="noreferrer" className="hover:text-white transition-colors text-[10px] uppercase tracking-widest">GitHub</a>
+            <a
+              href="https://github.com/000100R"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Rishav Ghosh on GitHub"
+              className="hover:text-white transition-colors text-[10px] uppercase tracking-widest"
+            >
+              GitHub
+            </a>
             <span className="text-zinc-800">•</span>
-            <a href="https://youtube.com/@rawentity-202" target="_blank" rel="noreferrer" className="hover:text-red-500 transition-colors text-[10px] uppercase tracking-widest">YouTube</a>
+            <a
+              href="https://youtube.com/@rawentity-202"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Rishav Ghosh on YouTube"
+              className="hover:text-red-500 transition-colors text-[10px] uppercase tracking-widest"
+            >
+              YouTube
+            </a>
           </div>
         </div>
 
         {/* Right: Scroll to Top */}
         <button
           onClick={handleScrollToTop}
+          aria-label="Scroll back to top"
           className="group flex items-center gap-2 text-[10px] font-mono tracking-widest text-zinc-500 hover:text-white transition-colors cursor-none"
           data-cursor="GO TOP"
         >

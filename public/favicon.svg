@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#090a0f" />
+  <rect width="90" height="90" x="5" y="5" rx="20" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0.3" />
+  <text x="50%" y="62%" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" fill="url(#glow)" text-anchor="middle">R</text>
+</svg>

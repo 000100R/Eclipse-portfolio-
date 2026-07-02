@@ -30,7 +30,7 @@ export default function Hero({ onOpenCommandPalette, onOpenAssistant }: HeroProp
     <section
       id="hero"
       ref={containerRef}
-      className="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-[#050505] px-6 md:px-12 select-none"
+      className="relative min-h-screen py-24 md:py-0 w-full flex flex-col justify-center items-center overflow-hidden bg-[#050505] px-6 md:px-12 select-none"
     >
       {/* Self-contained custom styles for performant animations */}
       <style>{`
@@ -122,7 +122,7 @@ export default function Hero({ onOpenCommandPalette, onOpenAssistant }: HeroProp
             Developer • AI Enthusiast • Creative Technologist
           </span>
           
-          <h1 className="text-6xl sm:text-8xl md:text-[9.5rem] font-sans font-black tracking-tighter text-white leading-[0.85] mb-8">
+          <h1 className="text-5xl sm:text-8xl md:text-[9.5rem] font-sans font-black tracking-tighter text-white leading-[0.85] mb-8">
             Rishav Ghosh
           </h1>
 

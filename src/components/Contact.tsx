@@ -323,7 +323,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="text-4xl md:text-8xl xl:text-9xl font-display font-light text-zinc-800/20 tracking-tighter leading-none pointer-events-none select-none uppercase"
+            className="text-3xl sm:text-5xl md:text-8xl xl:text-9xl font-display font-light text-zinc-800/20 tracking-tighter leading-none pointer-events-none select-none uppercase"
           >
             CREATE THE FUTURE
           </motion.h3>

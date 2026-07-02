@@ -118,6 +118,7 @@ export function ProjectCard({ project, index, onOpenCaseStudy }: ProjectCardProp
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
                   aria-label={`${project.title} on GitHub`}
+                  data-cursor="CODE"
                   className="flex items-center gap-2 rounded-xl border border-white/20 bg-eclipse-black/80 px-4 py-2.5 text-[13px] font-medium text-eclipse-white backdrop-blur-md transition-colors duration-fast hover:border-white/40 focus-ring"
                 >
                   <Github size={14} aria-hidden />
@@ -131,6 +132,7 @@ export function ProjectCard({ project, index, onOpenCaseStudy }: ProjectCardProp
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
                   aria-label={`${project.title} live demo`}
+                  data-cursor="LIVE"
                   className="flex items-center gap-2 rounded-xl border border-white/20 bg-eclipse-black/80 px-4 py-2.5 text-[13px] font-medium text-eclipse-white backdrop-blur-md transition-colors duration-fast hover:border-white/40 focus-ring"
                 >
                   <ExternalLink size={14} aria-hidden />
@@ -189,6 +191,7 @@ export function ProjectCard({ project, index, onOpenCaseStudy }: ProjectCardProp
             <button
               type="button"
               onClick={() => onOpenCaseStudy(project)}
+              data-cursor="STUDY"
               className="group/btn flex w-full items-center justify-between rounded-xl border border-white/[0.07] bg-white/[0.02] px-4 py-2.5 text-[13px] font-medium text-eclipse-muted transition-all duration-base hover:border-white/[0.14] hover:bg-white/[0.04] hover:text-eclipse-white focus-ring"
             >
               Read Case Study

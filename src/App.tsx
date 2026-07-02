@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import SpaceBackground from './components/Background/SpaceBackground';
+import { useState, useEffect, Suspense, lazy } from 'react';
 import { useScrollProgress } from './hooks/useScrollProgress';
 import CustomCursor from './components/CustomCursor';
 import ScrollProgress from './components/ScrollProgress';
@@ -13,9 +12,12 @@ import Skills from './components/Skills';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import AskRishav from './components/AI/AskRishav';
-import CommandPalette from './components/CommandPalette';
 import { startAmbientSound, stopAmbientSound } from './utils/synthesizer';
+
+// Lazy loaded heavy components to minimize initial bundle size and speed up first paint
+const SpaceBackground = lazy(() => import('./components/Background/SpaceBackground'));
+const AskRishav = lazy(() => import('./components/AI/AskRishav'));
+const CommandPalette = lazy(() => import('./components/CommandPalette'));
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -110,7 +112,9 @@ Generated automatically from Rishav Ghosh Digital Space (2026).
   return (
     <>
       {/* Ambient Space Backdrop with performance tiers and scroll parallax */}
-      <SpaceBackground scrollProgress={scrollProgress} />
+      <Suspense fallback={<div className="fixed inset-0 bg-[#050505]" />}>
+        <SpaceBackground scrollProgress={scrollProgress} />
+      </Suspense>
 
       {/* Screen Interactive Custom Cursor */}
       <CustomCursor />
@@ -164,21 +168,25 @@ Generated automatically from Rishav Ghosh Digital Space (2026).
           <Footer />
 
           {/* Floating Neural Chatbot Assistant */}
-          <AskRishav
-            isOpen={isAssistantOpen}
-            onClose={() => setIsAssistantOpen(false)}
-            onOpen={() => setIsAssistantOpen(true)}
-          />
+          <Suspense fallback={null}>
+            <AskRishav
+              isOpen={isAssistantOpen}
+              onClose={() => setIsAssistantOpen(false)}
+              onOpen={() => setIsAssistantOpen(true)}
+            />
+          </Suspense>
 
           {/* Keyboard-triggered Search Spotlight Command Console */}
-          <CommandPalette
-            isOpen={isCommandPaletteOpen}
-            onClose={() => setIsCommandPaletteOpen(false)}
-            onToggleMusic={toggleMusic}
-            isMusicPlaying={isMusicPlaying}
-            onOpenAssistant={() => setIsAssistantOpen(true)}
-            onDownloadResume={handleDownloadResume}
-          />
+          <Suspense fallback={null}>
+            <CommandPalette
+              isOpen={isCommandPaletteOpen}
+              onClose={() => setIsCommandPaletteOpen(false)}
+              onToggleMusic={toggleMusic}
+              isMusicPlaying={isMusicPlaying}
+              onOpenAssistant={() => setIsAssistantOpen(true)}
+              onDownloadResume={handleDownloadResume}
+            />
+          </Suspense>
 
         </div>
       )}

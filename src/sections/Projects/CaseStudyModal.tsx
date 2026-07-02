@@ -82,7 +82,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed inset-x-4 bottom-4 top-4 mx-auto max-w-3xl overflow-hidden rounded-2xl border border-white/[0.09] shadow-[0_32px_100px_rgba(0,0,0,0.8)] sm:inset-x-6 sm:bottom-6 sm:top-6"
+            className="fixed inset-x-4 bottom-4 top-4 mx-auto max-w-3xl flex flex-col overflow-hidden rounded-2xl border border-white/[0.09] shadow-[0_32px_100px_rgba(0,0,0,0.8)] sm:inset-x-6 sm:bottom-6 sm:top-6"
             style={{
               zIndex: zIndex.modal,
               background: "rgba(8,9,11,0.92)",
@@ -134,7 +134,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
             </div>
 
             {/* Scrollable content */}
-            <div className="h-[calc(100%-4.5rem)] overflow-y-auto px-6 py-6 sm:px-8 sm:py-7">
+            <div className="flex-1 overflow-y-auto px-6 py-6 sm:px-8 sm:py-7">
               {/* Tech badges */}
               <div className="mb-6 flex flex-wrap gap-2">
                 {project.tech.map((t) => (

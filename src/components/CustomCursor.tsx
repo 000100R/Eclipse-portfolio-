@@ -7,6 +7,7 @@ export default function CustomCursor() {
   const [hoverText, setHoverText] = useState('');
   const [isVisible, setIsVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(true);
+  const [isKeyboardUser, setIsKeyboardUser] = useState(false);
 
   const trailRef = useRef<HTMLDivElement | null>(null);
 
@@ -47,6 +48,24 @@ export default function CustomCursor() {
     document.addEventListener('mouseleave', onMouseLeaveWindow);
     document.addEventListener('mouseenter', onMouseEnterWindow);
 
+    // Detect keyboard navigation (Tab key)
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Tab') {
+        setIsKeyboardUser(true);
+        document.body.classList.remove('custom-cursor-active');
+      }
+    };
+
+    const handleMouseDown = () => {
+      setIsKeyboardUser(false);
+      if (mediaQuery.matches) {
+        document.body.classList.add('custom-cursor-active');
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('mousedown', handleMouseDown);
+
     // Track hover status on links and buttons
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -68,8 +87,8 @@ export default function CustomCursor() {
 
     document.addEventListener('mouseover', handleMouseOver);
 
-    // Add active class to body for CSS selectors
-    if (mediaQuery.matches) {
+    // Add active class to body for CSS selectors (only if not keyboard user)
+    if (mediaQuery.matches && !isKeyboardUser) {
       document.body.classList.add('custom-cursor-active');
     }
 
@@ -78,10 +97,12 @@ export default function CustomCursor() {
       window.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseleave', onMouseLeaveWindow);
       document.removeEventListener('mouseenter', onMouseEnterWindow);
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('mousedown', handleMouseDown);
       document.removeEventListener('mouseover', handleMouseOver);
       document.body.classList.remove('custom-cursor-active');
     };
-  }, []);
+  }, [isKeyboardUser]);
 
   // Smooth trail effect using requestAnimationFrame
   useEffect(() => {
@@ -106,7 +127,7 @@ export default function CustomCursor() {
     return () => cancelAnimationFrame(animId);
   }, [position, isMobile, isVisible]);
 
-  if (isMobile || !isVisible) return null;
+  if (isMobile || !isVisible || isKeyboardUser) return null;
 
   return (
     <>
