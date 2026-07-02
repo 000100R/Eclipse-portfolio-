@@ -143,12 +143,6 @@ export default function Navbar({
 
   return (
     <>
-      {/* Micro-fine Scroll Progress Line with deep blue/sky-blue gradient matching Hero */}
-      <div
-        className="fixed top-0 left-0 h-[2.5px] bg-gradient-to-r from-blue-600 via-sky-400 to-indigo-500 z-50 transition-all duration-75"
-        style={{ width: `${scrollProgress}%` }}
-      />
-
       <motion.header
         id="navbar-header"
         initial={{ y: 0 }}

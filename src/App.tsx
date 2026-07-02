@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import SpaceBackground from './components/Background/SpaceBackground';
 import { useScrollProgress } from './hooks/useScrollProgress';
 import CustomCursor from './components/CustomCursor';
+import ScrollProgress from './components/ScrollProgress';
 import PageLoader from './components/PageLoader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -113,6 +114,9 @@ Generated automatically from Rishav Ghosh Digital Space (2026).
 
       {/* Screen Interactive Custom Cursor */}
       <CustomCursor />
+
+      {/* Global Scroll Progress Indicators */}
+      <ScrollProgress />
 
       {/* Cinematic Intro Preloader */}
       <PageLoader onComplete={() => setIsLoading(false)} />
